@@ -1,0 +1,37 @@
+  <div class="bar bar-header bar-balanced" side="left">
+   <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  <div class="title">BALANCE NHZ</div>
+  <button class="button button-clear" ng-click="logout()"><i class="icon ion-log-out"></i></button>
+</div>
+<ion-view >
+  <ion-content class="has-header">
+
+    <h1>Cheking Balance</h1>
+<h4>Wellcome back </h4>
+<div class="list list-inset">
+
+    <div class="item" style="background-color:#009540;color:white">
+      <center>{{walletme}}</center>
+    </div>
+
+</div>
+ <button  class="button button-outline button-full button-balanced">
+  <span id='mainn'><strong>{{oke1.datas/100000000}}</strong></span><br/>Balance
+</button><br/>
+ <button  class="button button-outline button-full button-royal">
+<span id='mainn'><strong>{{oke2.datas/100000000}}</strong></span><br/>guaranteedBalance
+</button>
+ <button  class="button button-outline button-full button-energized">
+ <span id='mainn'><strong>{{oke3.datas/100000000}}</strong></span><br/>UnconfirmedBalance
+ </button>
+ <button  class="button button-outline button-full button-assertive">
+  <span id='mainn'><strong>{{oke4.datas/100000000}}</strong></span><br/>ForgedBalance
+</button>
+<br/><br/><br/><br/><br/><br/>
+    
+  </ion-content>
+  
+</ion-view>
+<div class="bar bar-footer bar-balanced">
+  <div class="title">NHZ Mobile Wallet Api V.1.0</div>
+</div>

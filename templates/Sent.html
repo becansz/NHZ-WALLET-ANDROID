@@ -1,0 +1,34 @@
+  <div class="bar bar-header bar-balanced" side="left">
+   <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  <div class="title">Sent Nhz</div>
+  <button class="button button-clear" ng-click="logout()"><i class="icon ion-log-out"></i></button>
+</div>
+<ion-view >
+  <ion-content class="has-header">
+
+    <h1>Sent nhz</h1>
+    
+<form role="form" name="form" >
+    <div class="list list-inset">
+  <label class="item item-input">
+    <input type="text" placeholder="Recieve" required class="form-control" ng-disabled="{{kirimuang}}" ng-model="nhz.penerima">
+  </label><br/>
+  <label class="item item-input">
+    <input type="number" placeholder="Amount" required class="form-control" ng-disabled="{{kirimuang}}" ng-model="nhz.jumlah">
+  </label><br/>
+  <label class="item item-input">
+  	<input type="text" placeholder="Secret pharese" required class="form-control" ng-disabled="{{kirimuang}}" ng-model="nhz.pwd">    
+  </label>
+</div>
+<div class="padding">
+        <button class="button button-block button-balanced" type="submit" ng-click="sent(nhz)" ng-disabled="form.$invalid">Sent</button>
+      </div>
+      </form>
+      <b><font color="red"><center>{{hasildata}}</center></font></b>
+      <font color="red"> <center>{{puberor}}</center></font>
+      <br/><br/><br/><br/><br/>
+  </ion-content>
+</ion-view>
+<div class="bar bar-footer bar-balanced">
+  <div class="title">NHZ Mobile Wallet Api V.1.0</div>
+</div>
